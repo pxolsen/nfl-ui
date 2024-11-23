@@ -13,7 +13,7 @@ const Predictions = () => {
     setPredictions(null); // Clear previous results
 
     try {
-      const response = await axios.post("http://localhost:8000/predict", {
+      const response = await axios.post("https://nfl-predictor-xxy1.onrender.com/predict", {
         year: parseInt(year),
         week_num: parseInt(weekNum),
       });
